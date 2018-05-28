@@ -441,13 +441,14 @@ ul.menu {
   ul.menu li {
     list-style: none;
     position: relative;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-left: 15px; }
     ul.menu li a {
       color: #626667;
       text-decoration: none;
       font-size: 16px;
-      padding-left: 30px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      position: relative; }
       ul.menu li a:before {
         content: '';
         position: absolute;
@@ -458,8 +459,9 @@ ul.menu {
         -webkit-transform: translateX(50%) translateY(50%) rotate(45deg);
         -ms-transform: translateX(50%) translateY(50%) rotate(45deg);
         transform: translateX(50%) translateY(50%) rotate(45deg);
-        left: 0;
-        top: 5px; }
+        left: -20px;
+        right: 100%;
+        top: 2px; }
       ul.menu li a:after {
         content: '';
         -webkit-border-radius: 4px;
@@ -470,8 +472,9 @@ ul.menu {
         -webkit-transform: translateX(50%) translateY(50%) rotate(-45deg);
         -ms-transform: translateX(50%) translateY(50%) rotate(-45deg);
         transform: translateX(50%) translateY(50%) rotate(-45deg);
-        left: 0;
-        top: 11px; }
+        left: -20px;
+        right: 100%;
+        top: 8px; }
 
 .c-text {
   font-size: 16px;
