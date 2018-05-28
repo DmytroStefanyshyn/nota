@@ -1,0 +1,29 @@
+.icon {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.icon-clock {
+    width: 35px;
+    height: 33px;
+    background-position: -5px -5px;
+}
+
+.icon-finger {
+    width: 24px;
+    height: 32px;
+    background-position: -50px -5px;
+}
+
+.icon-letter {
+    width: 33px;
+    height: 24px;
+    background-position: -5px -48px;
+}
+
+.icon-map {
+    width: 30px;
+    height: 30px;
+    background-position: -84px -5px;
+}
