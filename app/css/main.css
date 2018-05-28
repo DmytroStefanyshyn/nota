@@ -37,13 +37,25 @@ a {
 
 @media (min-width: 768px) {
   .col-sidebar {
-    width: 45%;
+    width: 43%;
+    float: left; } }
+
+@media (min-width: 1024px) {
+  .col-sidebar {
+    width: 30%;
     float: left; } }
 
 @media (min-width: 768px) {
   .col-content {
     width: 55%;
-    display: inline-block; } }
+    display: inline-block;
+    padding-left: 30px; } }
+
+@media (min-width: 1024px) {
+  .col-content {
+    width: 70%;
+    display: inline-block;
+    padding-left: 30px; } }
 
 .header {
   padding-top: 40px;
@@ -205,17 +217,32 @@ a {
 .footer {
   background: #e8e8e8;
   padding-top: 50px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  overflow: hidden; }
   .footer__title {
     font-size: 24px;
     margin-bottom: 25px;
     color: #000; }
+    @media (min-width: 1024px) {
+      .footer__title {
+        float: left;
+        width: 700px; } }
   .footer__text {
     line-height: 2;
     font-size: 13px;
     margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      .footer__text {
+        width: 700px; } }
+    @media (min-width: 1024px) {
+      .footer__text {
+        float: left; } }
     .footer__text a {
       color: #3e5260; }
+      @media (min-width: 768px) {
+        .footer__text a {
+          width: 135px;
+          float: right; } }
   .footer__copyrights {
     color: #868686;
     font-size: 14px;
@@ -223,10 +250,30 @@ a {
     padding-top: 10px;
     line-height: 2;
     position: relative; }
+    @media (min-width: 1024px) {
+      .footer__copyrights {
+        float: right;
+        width: 230px;
+        bottom: 25px; } }
+    @media (min-width: 1288px) {
+      .footer__copyrights {
+        top: 0;
+        position: absolute;
+        right: 0;
+        width: 300px;
+        bottom: 0;
+        text-align: right; } }
   .footer .icon-copy {
     position: absolute;
     left: 0;
     top: 0; }
+    @media (min-width: 1024px) {
+      .footer .icon-copy {
+        position: relative;
+        top: -30px; } }
+    @media (min-width: 1288px) {
+      .footer .icon-copy {
+        left: 88%; } }
 
 .icon-copy {
   margin-top: 10px;
@@ -311,10 +358,10 @@ ul.main_menu {
     width: 0px;
     height: 0px;
     background: #d36651;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(24%, transparent), color-stop(25%, rgba(255, 255, 255, 0.5)), color-stop(26%, rgba(255, 255, 255, 0.5)), color-stop(27%, transparent), color-stop(74%, transparent), color-stop(75%, rgba(255, 255, 255, 0.5)), color-stop(76%, rgba(255, 255, 255, 0.5)), color-stop(77%, transparent), to(transparent)), -webkit-gradient(linear, left top, right top, color-stop(24%, transparent), color-stop(25%, rgba(255, 255, 255, 0.5)), color-stop(26%, rgba(255, 255, 255, 0.5)), color-stop(27%, transparent), color-stop(74%, transparent), color-stop(75%, rgba(255, 255, 255, 0.5)), color-stop(76%, rgba(255, 255, 255, 0.5)), color-stop(77%, transparent), to(transparent));
-    background-image: -webkit-linear-gradient(bottom, transparent 24%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0.5) 76%, transparent 77%, transparent), -webkit-linear-gradient(left, transparent 24%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0.5) 76%, transparent 77%, transparent);
-    background-image: -o-linear-gradient(bottom, transparent 24%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0.5) 76%, transparent 77%, transparent), -o-linear-gradient(left, transparent 24%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0.5) 76%, transparent 77%, transparent);
-    background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0.5) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0.5) 76%, transparent 77%, transparent);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(24%, transparent), color-stop(25%, rgba(255, 255, 255, 0.2)), color-stop(26%, rgba(255, 255, 255, 0.2)), color-stop(27%, transparent), color-stop(74%, transparent), color-stop(75%, rgba(255, 255, 255, 0.2)), color-stop(76%, rgba(255, 255, 255, 0.2)), color-stop(77%, transparent), to(transparent)), -webkit-gradient(linear, left top, right top, color-stop(24%, transparent), color-stop(25%, rgba(255, 255, 255, 0.2)), color-stop(26%, rgba(255, 255, 255, 0.2)), color-stop(27%, transparent), color-stop(74%, transparent), color-stop(75%, rgba(255, 255, 255, 0.2)), color-stop(76%, rgba(255, 255, 255, 0.2)), color-stop(77%, transparent), to(transparent));
+    background-image: -webkit-linear-gradient(bottom, transparent 24%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2) 76%, transparent 77%, transparent), -webkit-linear-gradient(left, transparent 24%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2) 76%, transparent 77%, transparent);
+    background-image: -o-linear-gradient(bottom, transparent 24%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2) 76%, transparent 77%, transparent), -o-linear-gradient(left, transparent 24%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2) 76%, transparent 77%, transparent);
+    background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0.2) 76%, transparent 77%, transparent);
     -webkit-background-size: 20px 20px;
     background-size: 20px 20px;
     overflow: hidden;
